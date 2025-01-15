@@ -3,13 +3,13 @@ const { Server } = require("socket.io");
 // Create an HTTP server and Socket.IO server
 const io = new Server(8000, {
   cors: {
-    origin: https://web-rtc-ix82.vercel.app/ // Replace with your frontend Vercel URL
+
+    origin: "https://your-frontend-url.vercel.app", // Replace with your frontend Vercel URL
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true
   }
 });
-
 const emailToSocketIdMap = new Map();
 const socketidToEmailMap = new Map();
 
