@@ -6,8 +6,8 @@ const io = new Server(8000, {
 
     origin: "https://web-rtc-ix82.vercel.app/", // Replace with your frontend Vercel URL
     
-    allowedHeaders: ["my-custom-header"],
-    credentials: true
+  
+  
   }
 });
 const emailToSocketIdMap = new Map();
